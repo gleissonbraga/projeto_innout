@@ -1,6 +1,4 @@
 <?php
-loadModel('User');
-
 class login extends Model {
     public function validate() {
         $errors = [];

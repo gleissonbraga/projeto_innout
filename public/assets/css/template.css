@@ -54,13 +54,13 @@ header.header .spacer {
 header.header .dropdown {
     position: relative;
     height: 100%;
+    cursor: pointer;
 }
 
 header.header .dropdown-button {
     height: 100%;
     font-size: 1.1rem;
     color: white;
-    cursor: pointer;
 }
 
 header.header .dropdown span {
@@ -72,8 +72,8 @@ header.header .dropdown span {
 }
 
 header.header .dropdown-content {
-    display: none;
     position: absolute;
+    display: none;
     min-width: 100%;
     background-color: #f9f9f9;
     padding: 15px 0px;
@@ -107,6 +107,12 @@ header.header .dropdown-content a:hover{
 
 header.header .dropdown:hover{
     background-color: rgba(0, 0, 0, .1);
+}
+
+header.header .avatar {
+    height: 76%;
+    border-radius: 50%;
+    margin: 0px 5px 0 10px;
 }
 
 aside.sidebar {
