@@ -54,6 +54,15 @@ class Model {
         }
     }
 
+    public function save() {
+        $sql = "INSERT INTO " . static::$tableName . " (" . implode(",", static::$columns) . ") VALUES (";
+        foreach(static::$columns as $col) {
+            $sql .= static::getFormatedValue($this->col) . ",";
+        }
+        $sql[strlen($sql) - 1] = ')';
+        $id = DataBase::executeSQL($sql);
+    }
+
     private static function getFilters($filters) {
         $sql = '';
         if(count($filters) > 0) {
