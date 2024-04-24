@@ -2,8 +2,6 @@
 session_start();
 requireValidSession();
 
-loadModel('WorkingHours');
-
 
 
 $date = (new DateTime())->getTimestamp();
