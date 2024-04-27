@@ -5,4 +5,4 @@
 
 
 
-print_r(getLastDayOfMonth('2024-02'));
+echo User::getCount(["id" => 3]);
